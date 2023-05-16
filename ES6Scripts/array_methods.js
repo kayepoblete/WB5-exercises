@@ -14,24 +14,24 @@ let cart = [
 // a. Searches array using map() function to return only the item name
 // and then use forEach() to display list of items
 
-// function itemNames(arrayElement){
-//     return arrayElement.item;
-// }
-// function displayItemNames(arrayElement){
-//     console.log(arrayElement);
-// }
-// let cartItems = cart.map(itemNames);
-// cartItems.forEach(displayItemNames);
+function itemNames(arrayElement){
+    return arrayElement.item;
+}
+function displayItemNames(arrayElement){
+    console.log(arrayElement);
+}
+let cartItems1 = cart.map(itemNames);
+cartItems1.forEach(displayItemNames);
 
 // b. Determines the total cost of everything in the cart using reduce().
 // In the reducer function, remember to account for the possibility if there
 // being more than 1 unit (ex. 5 apples rather 1)!
 
-// function getTotalCost(currentTotal, arrayElement){
-//     return currentTotal + (arrayElement.price * arrayElement.quantity);
-// }
-// let sum = cart.reduce(getTotalCost, 0);
-// console.log(sum);
+function getTotalCost(currentTotal, arrayElement){
+    return currentTotal + (arrayElement.price * arrayElement.quantity);
+}
+let sum = cart.reduce(getTotalCost, 0);
+console.log(sum);
 
 // c. Revisit your code for (a) above. Can you sort the list before you display it?
 
@@ -41,6 +41,6 @@ function itemNames(arrayElement){
 function displayItemNames(arrayElement){
     console.log(arrayElement);
 }
-let cartItems = cart.map(itemNames);
-cartItems.sort();
-cartItems.forEach(displayItemNames);
+let cartItems2 = cart.map(itemNames);
+cartItems2.sort();
+cartItems2.forEach(displayItemNames);
