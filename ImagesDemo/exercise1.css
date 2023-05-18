@@ -1,0 +1,5 @@
+/* Exercise 1 page 74 */
+.roundedImg{
+    height: 500px;
+    border-radius: 50%;
+}

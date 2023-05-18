@@ -20,12 +20,8 @@ let cheapCandies = products.filter(candy => candy.price < 4.00);
 cheapCandies.forEach(candy => console.log(candy.product));
 
 // Which candies has "M&M" its name?
-let mnms = products.filter(candy => candy.product.indexOf("M&M") > -1);
+let mnms = products.filter(candy => candy.product.includes("M&M"));
 mnms.forEach(candy => console.log(candy.product));
 
 // Do we carry "Swedish Fish"?
-let swedishFish = products.find(candy => {
-    if(candy.product === "Swedish Fish"){
-        console.log("Yes we have Swedish Fish.");
-    }
-});
+let swedishFish = products.find(candy => (candy.product === "Swedish Fish") ? console.log("Yes we have Swedish Fish.") : null);
